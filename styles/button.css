@@ -1,0 +1,36 @@
+.button {
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button--theme-blue {
+    background-color: #005bff;
+    color: #fff;
+}
+
+.button--theme-light-blue {
+    background-color: rgba(0,150,255,.08);
+    color: #005bff;
+}
+
+.button--theme-red {
+    background-color: red;
+    color: #fff;
+}
+
+.button--size-small {
+    padding: 2px 6px;
+}
+
+.button--size-medium {
+    padding: 6px 12px;
+}
+
+.button--size-large {
+    padding: 10px 16px;
+}
+
+.button--disabled {
+    opacity: .5;
+}
