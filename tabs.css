@@ -1,0 +1,13 @@
+.tabs__item--hidden {
+    display: none;
+}
+
+.tabs__nav-item {
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.tabs__nav-item--active {
+    color: red;
+}
