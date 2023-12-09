@@ -23,6 +23,7 @@ function getResults(){
     const email = document.querySelector('[name="email"]');
     const tel = document.querySelector('[name="phone"]');
     const radio = document.querySelectorAll('[name="woman"]');
+    const nickname = document.querySelector('[name="nickname"]');
     const password = document.querySelector('[name="password"]');
     const range = document.querySelector('[name="range"]');
     const checkbox = document.querySelector('[name="checkbox"]');
@@ -54,6 +55,7 @@ function getResults(){
         email: email.value,
         tel: tel.value,
         radio: selectedValue,
+        nickname: nickname.value,
         password: password.value,
         range: range.value,
         checkbox: isChecked,
