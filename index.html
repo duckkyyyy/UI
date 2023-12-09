@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="styles/button.css">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="styles/forms.css">
 </head>
 <body>
-    <button class="button button--theme-blue button--size-small">
-        <span class="button__text">sdfvdsfv</span>
-    </button>
+    <h3>Анкета</h3>
+        <form id="form" action="" class="form">
+            <p>Введите ваше имя</p>
+            <input type="text" name="name" >
+                <p>Введите ваш возраст</p>
+                <input type="number" name="age">
+                    <p>Введите вашу дату рождения</p>
+                    <input type="date" name="birthdate">
+                        <p>Введите вашу почту</p>
+                        <input type="email" name="email">
+                            <p>Введите ваш телефон</p>
+                            <input type="tel" name="phone">
+                                <p>Что самое главное в девушке?</p>
+                                <input type="radio" id="boobs" name="woman" value="boobs" checked>
+                                <label for="boobs">Грудь</label>
+                                <input type="radio" id="ass" name="woman" value="ass">
+                                <label for="ass">Попа</label>
+                                <input type="radio" id="soul" name="woman" value="soul">
+                                <label for="soul">Душа</label>
+                                    <p>Придумайте ник</p>
+                                    <input type="text" name="nickname">
+                                        <p>Придумайте пароль</p>
+                                        <input type="password" name="password">
+                                        <button id="show">X</button>
+                                            <p>Выберите рандомную цифру</p>
+                                            <input type="range" name="range" min="1" max="40">
+                                                <p>Вы любите чипсы?</p>
+                                                <input type="checkbox" name="checkbox" id="checkbox">
+                                                <label for="checkbox">Да</label>
+                                                    <p>Скиньте свой любимый мем</p>
+                                                    <input type="file" name="meme">
+                                                        <br>
+                                                            <input type="button" name="submit" id="submit" class="submit" value="Отправить">
+        </form>
 
-    <button class="button button--theme-light-blue button--size-medium">sdfvsdvf</button>
+    <div class="result" id="result"></div>
+    <div class="photo" id="photo"></div>
 
-    <button class="button button--theme-red button--size-large">sdfvsdvf</button>
-
-    <hr>
-
-    <button class="button button--theme-blue button--size-medium button--disabled">sdfvsdvf</button>
-
-    <button class="button button--theme-light-blue button--size-medium button--disabled">sdfvsdvf</button>
-
-    <button class="button button--theme-red button--size-medium button--disabled">sdfvsdvf</button>
+    <script src="components/forms.js" type="module"></script>
 </body>
 </html>
